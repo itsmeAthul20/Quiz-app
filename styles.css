@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#start-container {
+    background-color: white; /* White background for start container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Fixed height */
+}
+#quiz-container, #end-container, #summary-container {
+    background-color: white; /* White background for containers */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    display: none; /* Initially hide the containers */
+}
+h2 {
+    color: #0073e6; /* Blue color for headers */
+}
+#timer {
+    font-weight: bold;
+    color: #004a99; /* Darker blue for the timer */
+}
+.question {
+    margin-bottom: 20px;
+    color: #004a99; /* Darker blue for questions */
+}
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+.options li {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #0073e6; /* Blue border for options */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.options li:hover {
+    background-color: #0073e6; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+.selected {
+    background-color: #0073e6;
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    background-color: #0073e6; /* Blue background for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #004a99; /* Darker blue on hover */
+}
